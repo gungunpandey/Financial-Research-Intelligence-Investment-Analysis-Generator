@@ -1,0 +1,58 @@
+# Core Python packages
+python-dotenv==1.0.0
+requests==2.31.0
+pandas==2.1.4
+numpy==1.24.3
+scipy==1.11.4
+
+# Financial Data APIs
+yfinance==0.2.28
+alpha-vantage==2.3.1
+sec-edgar-downloader==4.0.0
+fredapi==0.5.1
+
+# Web Scraping & Data Processing
+beautifulsoup4==4.12.2
+scrapy==2.11.0
+selenium==4.15.2
+lxml==4.9.3
+
+# AI/ML Libraries
+openai==1.3.7
+transformers==4.35.2
+torch==2.1.1
+scikit-learn==1.3.2
+prophet==1.1.4
+statsmodels==0.14.0
+
+# Database & Storage
+psycopg2-binary==2.9.9
+pymongo==4.6.0
+redis==5.0.1
+elasticsearch==8.11.0
+influxdb-client==1.38.0
+
+# Real-time & API
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+websockets==12.0
+kafka-python==2.0.2
+
+# Data Processing & Analysis
+plotly==5.17.0
+matplotlib==3.8.2
+seaborn==0.13.0
+ta==0.10.2
+finrl==0.3.5
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+tqdm==4.66.1
+loguru==0.7.2
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1 

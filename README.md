@@ -281,3 +281,50 @@ For technical discussions, collaboration opportunities, or project inquiries:
 ## ⚠️ Disclaimer
 
 This system is designed for informational and educational purposes. All investment analysis and recommendations should be verified independently. Past performance does not guarantee future results. Always consult with qualified financial advisors before making investment decisions.
+
+## 🚦 Current Project Status (July 2024)
+
+- **Data Connectors:**
+  - Yahoo Finance, Alpha Vantage, and FRED connectors are implemented and working.
+  - SEC EDGAR connector is implemented but currently returns 403 errors (likely due to SEC rate limiting or IP blocking).
+- **API:**
+  - FastAPI-based API is scaffolded with endpoints for stock price, company info, financials, and economic indicators.
+- **Requirements:**
+  - All dependencies are now consolidated in a single `requirements.txt` file.
+- **Environment:**
+  - Virtual environment setup is recommended. See below for instructions.
+- **Logs and Data:**
+  - All log files and the `data/` directory are excluded from git for privacy and security.
+
+## 🚀 Quickstart
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repo-url>
+   cd Financial-Research-Intelligence-Investment-Analysis-Generator
+   ```
+2. **Create and activate a virtual environment:**
+   ```bash
+   python -m venv venv
+   # On Windows:
+   venv\Scripts\activate
+   # On Mac/Linux:
+   source venv/bin/activate
+   ```
+3. **Install dependencies:**
+   ```bash
+   pip install --upgrade pip
+   pip install -r requirements.txt
+   ```
+4. **Run the FastAPI server:**
+   ```bash
+   uvicorn src.main_api:app --reload
+   ```
+5. **Access the API docs:**
+   - Open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) in your browser.
+
+## 🤝 Contributing
+
+- Please ensure no confidential or personal data is committed.
+- Do not commit log files or anything in the `data/` directory.
+- Open issues or pull requests for new features, bug fixes, or improvements.
